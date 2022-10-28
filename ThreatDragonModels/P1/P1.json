@@ -797,8 +797,8 @@
                 "height": 80
               },
               "position": {
-                "x": 353,
-                "y": 328
+                "x": 209,
+                "y": 484
               },
               "angle": 0,
               "id": "7c806016-7ece-4d3b-b43c-523e3988b414",
@@ -1338,6 +1338,31 @@
                   "class": "connection hasNoOpenThreats isInScope"
                 }
               }
+            },
+            {
+              "type": "tm.Boundary",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 879,
+                "y": 419
+              },
+              "target": {
+                "x": 377,
+                "y": 411
+              },
+              "vertices": [
+                {
+                  "x": 715,
+                  "y": 443
+                }
+              ],
+              "id": "e04f9af8-fc28-4e7a-8be6-e5bd229d72f9",
+              "z": 39,
+              "attrs": {}
             }
           ]
         },
