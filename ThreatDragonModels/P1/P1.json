@@ -1404,7 +1404,7 @@
                   "type": "Spoofing",
                   "title": "Social Engineering",
                   "description": "Angreifer gibt sich als Unternehmen aus und verlangt nach Daten",
-                  "mitigation": "Kunden aufklären (E-Mails, Workshops)",
+                  "mitigation": "Kunden aufklären (E-Mails, Workshops)\n\nDanach Medium -> Kunden naiv",
                   "threatId": "638b74d6-6485-4196-85ed-df6dfbaf678f"
                 },
                 {
@@ -1414,7 +1414,7 @@
                   "type": "Information disclosure",
                   "title": "Virus Auf User PC/MAC",
                   "description": "Angreifer kann User-PC infizieren und so schützenswerte Daten abgreifen. Zu dem gehören auch Mails, die vom Handy aus abgelesen werden.",
-                  "mitigation": "Nutzer auffordern Virenscanner zu verwenden oder Aufklären.",
+                  "mitigation": "Nutzer auffordern Virenscanner zu verwenden oder Aufklären.\n\nDanach LOW",
                   "threatId": "c4185b14-067e-417e-957d-97a35876653a"
                 }
               ],
@@ -1482,7 +1482,7 @@
                   "status": "Mitigated",
                   "severity": "High",
                   "description": "DoS auf Login Seite\n-> Seite nicht mehr erreichbar",
-                  "mitigation": "DoS Schutzservice",
+                  "mitigation": "DoS Schutzservice\nDanach Medium, wegen DoS max. Schutz",
                   "threatId": "9a214f2a-bd1c-465e-9d0a-4879d96f8be5"
                 },
                 {
@@ -1493,7 +1493,7 @@
                   "title": "Datenklau",
                   "description": "Angreifer greifen auf schützenswerte Daten zu",
                   "threatId": "e425c2ff-497a-421f-a0e7-e5725bed8533",
-                  "mitigation": "SSL Verschlüsselung mit Login Server"
+                  "mitigation": "SSL/TLS Verschlüsselung mit Login Server\nDanach LOW"
                 },
                 {
                   "status": "Mitigated",
@@ -1502,7 +1502,7 @@
                   "type": "Spoofing",
                   "title": "Server vom Angreifer",
                   "description": "Angreifer kann eigenen Server zwischenschalten",
-                  "mitigation": "SSL Verschlüsselung verwenden",
+                  "mitigation": "SSL/TLS Verschlüsselung verwenden\nDanach auf LOW",
                   "threatId": "7b0443ca-3eb0-4b51-afb0-1ed0f2c7cc43"
                 },
                 {
@@ -1512,7 +1512,7 @@
                   "type": "Elevation of privilege",
                   "title": "Bug Abuse",
                   "description": "User kann seine Rechte erweitern, somit mehr Zugriff auf Inhalte",
-                  "mitigation": "Fix bugs",
+                  "mitigation": "Fix bugs\nDanach immernoch HIGH",
                   "threatId": "5445f30b-f71a-4a0d-bf32-5909e752809d"
                 }
               ],
@@ -1799,7 +1799,7 @@
               "angle": 0,
               "id": "1b60fbb9-0189-4b46-af8a-377811bb1128",
               "z": 22,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
                 {
                   "status": "Mitigated",
@@ -1808,7 +1808,7 @@
                   "type": "Spoofing",
                   "title": "Social Engineering",
                   "description": "Angreifer gibt sich als Telefonkunde aus und gaukelt vor ein neues Gerät zu haben",
-                  "mitigation": "2FA für Kundenservice bei Telefonanbieter",
+                  "mitigation": "2FA für Kundenservice bei Telefonanbieter, Schulung\n\nDanach Medium -> Mitarbeiterkompetenz nicht hoch",
                   "threatId": "c6cc9b41-7f91-483e-a75f-2a65001b4bdd"
                 },
                 {
@@ -1818,28 +1818,29 @@
                   "type": "Spoofing",
                   "title": "Anbieter gehackt",
                   "description": "Angreifer hat Zugriff auf Anbieter und kann Daten verändern",
-                  "threatId": "27f7289b-2495-4b42-8f94-6dc35cadbb73"
+                  "threatId": "27f7289b-2495-4b42-8f94-6dc35cadbb73",
+                  "mitigation": "Dienst temporär ausschalten bei Verdacht\nDanach Medium -> kann immernoch passieren"
                 },
                 {
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "modelType": "STRIDE",
                   "type": "Denial of service",
                   "title": "DoS",
                   "description": "Anbieter wird per DoS angegriffen und der Service steht nicht mehr bereit.",
-                  "mitigation": "DoS Schutz vom Anbieter verlangen",
+                  "mitigation": "DoS Schutz vom Anbieter verlangen\nDanach Medium, wegen DoS max. Schutz",
                   "threatId": "153f2deb-4daa-4bdc-9907-bc387ded961b"
                 }
               ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasOpenThreats isInScope"
+                  "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Kunden Tel.\nAnbieter"
                 },
                 ".element-text": {
-                  "class": "element-text hasOpenThreats isInScope"
+                  "class": "element-text hasNoOpenThreats isInScope"
                 }
               }
             },
@@ -2108,7 +2109,7 @@
                   "title": "User Error",
                   "type": "Information disclosure",
                   "description": "Mitarbeiter verliert SD-Karte",
-                  "mitigation": "SD-Karte verschlüsseln oder keine SD-Karte verwenden.\nMitarbeiter aufklären.",
+                  "mitigation": "SD-Karte verschlüsseln oder keine SD-Karte verwenden.\nMitarbeiter aufklären.\nDanach MEDIUM, da Mitarbeiter evtl. inkompetent/naiv sind.",
                   "threatId": "38c38cc3-d538-42b0-b016-f399db15e886"
                 }
               ],
