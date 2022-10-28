@@ -1396,6 +1396,28 @@
               "id": "1ba6657d-5528-4ea3-a140-335d41b79269",
               "z": 1,
               "hasOpenThreats": false,
+              "threats": [
+                {
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "modelType": "STRIDE",
+                  "type": "Spoofing",
+                  "title": "Social Engineering",
+                  "description": "Angreifer gibt sich als Unternehmen aus und verlangt nach Daten",
+                  "mitigation": "Kunden aufklären (E-Mails, Workshops)",
+                  "threatId": "638b74d6-6485-4196-85ed-df6dfbaf678f"
+                },
+                {
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Information disclosure",
+                  "title": "Virus Auf User PC/MAC",
+                  "description": "Angreifer kann User-PC infizieren und so schützenswerte Daten abgreifen. Zu dem gehören auch Mails, die vom Handy aus abgelesen werden.",
+                  "mitigation": "Nutzer auffordern Virenscanner zu verwenden oder Aufklären.",
+                  "threatId": "c4185b14-067e-417e-957d-97a35876653a"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
@@ -1451,6 +1473,49 @@
               "id": "15caf391-ec2f-4914-a9ed-d2cfc41852ba",
               "z": 3,
               "hasOpenThreats": false,
+              "threats": [
+                {
+                  "ruleId": "edb05d76-a695-455f-947b-7d67b78bc31d",
+                  "title": "Generic DoS threat",
+                  "type": "Denial of service",
+                  "modelType": "STRIDE",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "description": "DoS auf Login Seite\n-> Seite nicht mehr erreichbar",
+                  "mitigation": "DoS Schutzservice",
+                  "threatId": "9a214f2a-bd1c-465e-9d0a-4879d96f8be5"
+                },
+                {
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "modelType": "STRIDE",
+                  "type": "Information disclosure",
+                  "title": "Datenklau",
+                  "description": "Angreifer greifen auf schützenswerte Daten zu",
+                  "threatId": "e425c2ff-497a-421f-a0e7-e5725bed8533",
+                  "mitigation": "SSL Verschlüsselung mit Login Server"
+                },
+                {
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "modelType": "STRIDE",
+                  "type": "Spoofing",
+                  "title": "Server vom Angreifer",
+                  "description": "Angreifer kann eigenen Server zwischenschalten",
+                  "mitigation": "SSL Verschlüsselung verwenden",
+                  "threatId": "7b0443ca-3eb0-4b51-afb0-1ed0f2c7cc43"
+                },
+                {
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "modelType": "STRIDE",
+                  "type": "Elevation of privilege",
+                  "title": "Bug Abuse",
+                  "description": "User kann seine Rechte erweitern, somit mehr Zugriff auf Inhalte",
+                  "mitigation": "Fix bugs",
+                  "threatId": "5445f30b-f71a-4a0d-bf32-5909e752809d"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
@@ -1520,6 +1585,7 @@
               "id": "66bf40ad-eb54-4f20-a93c-7a13611eb8e8",
               "z": 5,
               "hasOpenThreats": false,
+              "threats": [],
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
@@ -1625,8 +1691,8 @@
                 "height": 80
               },
               "position": {
-                "x": 642,
-                "y": 12
+                "x": 652,
+                "y": 27
               },
               "angle": 0,
               "id": "1870117d-0869-4bbd-b5ac-d18dc90e4ef1",
@@ -1733,16 +1799,47 @@
               "angle": 0,
               "id": "1b60fbb9-0189-4b46-af8a-377811bb1128",
               "z": 22,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "modelType": "STRIDE",
+                  "type": "Spoofing",
+                  "title": "Social Engineering",
+                  "description": "Angreifer gibt sich als Telefonkunde aus und gaukelt vor ein neues Gerät zu haben",
+                  "mitigation": "2FA für Kundenservice bei Telefonanbieter",
+                  "threatId": "c6cc9b41-7f91-483e-a75f-2a65001b4bdd"
+                },
+                {
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Spoofing",
+                  "title": "Anbieter gehackt",
+                  "description": "Angreifer hat Zugriff auf Anbieter und kann Daten verändern",
+                  "threatId": "27f7289b-2495-4b42-8f94-6dc35cadbb73"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Denial of service",
+                  "title": "DoS",
+                  "description": "Anbieter wird per DoS angegriffen und der Service steht nicht mehr bereit.",
+                  "mitigation": "DoS Schutz vom Anbieter verlangen",
+                  "threatId": "153f2deb-4daa-4bdc-9907-bc387ded961b"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Kunden Tel.\nAnbieter"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -1796,8 +1893,8 @@
                 "height": 80
               },
               "position": {
-                "x": 397,
-                "y": 304
+                "x": 371,
+                "y": 314
               },
               "angle": 0,
               "id": "7c806016-7ece-4d3b-b43c-523e3988b414",
@@ -1903,8 +2000,8 @@
                 "y": 364
               },
               "target": {
-                "x": 49,
-                "y": 538
+                "x": 359,
+                "y": 620
               },
               "vertices": [
                 {
@@ -1938,6 +2035,7 @@
               "id": "69c87452-8b50-49ee-adfd-0258b443f79f",
               "z": 28,
               "hasOpenThreats": false,
+              "threats": [],
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
@@ -2002,6 +2100,18 @@
               "id": "3eaf455a-4f5b-4778-baf9-30d8ee87751f",
               "z": 32,
               "hasOpenThreats": false,
+              "threats": [
+                {
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "modelType": "STRIDE",
+                  "title": "User Error",
+                  "type": "Information disclosure",
+                  "description": "Mitarbeiter verliert SD-Karte",
+                  "mitigation": "SD-Karte verschlüsseln oder keine SD-Karte verwenden.\nMitarbeiter aufklären.",
+                  "threatId": "38c38cc3-d538-42b0-b016-f399db15e886"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
@@ -2075,6 +2185,10 @@
                   "y": 698
                 },
                 {
+                  "x": 420,
+                  "y": 323
+                },
+                {
                   "x": 425,
                   "y": 303
                 }
@@ -2140,8 +2254,8 @@
                   "y": 167
                 },
                 {
-                  "x": 851,
-                  "y": 112
+                  "x": 814,
+                  "y": 4
                 },
                 {
                   "x": 364,
@@ -2243,13 +2357,14 @@
                 "height": 100
               },
               "position": {
-                "x": 893,
+                "x": 891,
                 "y": 154
               },
               "angle": 0,
               "id": "42a5b65a-6a6d-4d82-964e-8a47082dd391",
               "z": 42,
               "hasOpenThreats": false,
+              "threats": [],
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
@@ -2479,7 +2594,12 @@
               "target": {
                 "id": "42a5b65a-6a6d-4d82-964e-8a47082dd391"
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 977,
+                  "y": 376
+                }
+              ],
               "id": "279ff806-4815-4b4b-a4cb-ce3de3532b10",
               "labels": [
                 {
