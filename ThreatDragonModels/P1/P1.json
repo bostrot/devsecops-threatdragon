@@ -1543,12 +1543,12 @@
                 "id": "15caf391-ec2f-4914-a9ed-d2cfc41852ba"
               },
               "target": {
-                "id": "42a5b65a-6a6d-4d82-964e-8a47082dd391"
+                "id": "66bf40ad-eb54-4f20-a93c-7a13611eb8e8"
               },
               "vertices": [
                 {
-                  "x": 381,
-                  "y": 42
+                  "x": 557,
+                  "y": 205
                 }
               ],
               "id": "44293613-3720-4862-9fce-d5507d2ff760",
@@ -1586,7 +1586,7 @@
                 "id": "66bf40ad-eb54-4f20-a93c-7a13611eb8e8"
               },
               "target": {
-                "id": "42a5b65a-6a6d-4d82-964e-8a47082dd391"
+                "id": "15caf391-ec2f-4914-a9ed-d2cfc41852ba"
               },
               "vertices": [
                 {
@@ -2454,8 +2454,8 @@
                 "height": 100
               },
               "position": {
-                "x": 503,
-                "y": 12
+                "x": 893,
+                "y": 154
               },
               "angle": 0,
               "id": "42a5b65a-6a6d-4d82-964e-8a47082dd391",
@@ -2481,24 +2481,16 @@
               },
               "smooth": true,
               "source": {
-                "id": "42a5b65a-6a6d-4d82-964e-8a47082dd391"
+                "id": "66bf40ad-eb54-4f20-a93c-7a13611eb8e8"
               },
               "target": {
-                "id": "15caf391-ec2f-4914-a9ed-d2cfc41852ba"
+                "id": "42a5b65a-6a6d-4d82-964e-8a47082dd391"
               },
-              "vertices": [
-                {
-                  "x": 536,
-                  "y": 155
-                }
-              ],
-              "id": "b65249f7-37dd-4705-867b-d7e5f06c6925",
+              "vertices": [],
+              "id": "22303911-fa01-4845-8a5d-5de70342ed29",
               "labels": [
                 {
-                  "position": {
-                    "distance": 0.5030494270833188,
-                    "offset": -17.009057898338106
-                  },
+                  "position": 0.5,
                   "attrs": {
                     "text": {
                       "text": "flow 31",
@@ -2527,24 +2519,16 @@
               },
               "smooth": true,
               "source": {
-                "id": "42a5b65a-6a6d-4d82-964e-8a47082dd391"
+                "id": "69c87452-8b50-49ee-adfd-0258b443f79f"
               },
               "target": {
-                "id": "66bf40ad-eb54-4f20-a93c-7a13611eb8e8"
+                "id": "42a5b65a-6a6d-4d82-964e-8a47082dd391"
               },
-              "vertices": [
-                {
-                  "x": 603,
-                  "y": 182
-                }
-              ],
-              "id": "0edfd7e4-2817-40c6-9f12-3675c671f85b",
+              "vertices": [],
+              "id": "9070ae6d-2c42-4ea1-a8ab-bab03b12084b",
               "labels": [
                 {
-                  "position": {
-                    "distance": 0.5334552392708116,
-                    "offset": -33.137921722036296
-                  },
+                  "position": 0.5,
                   "attrs": {
                     "text": {
                       "text": "flow 32",
@@ -2555,6 +2539,108 @@
                 }
               ],
               "z": 44,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 1107,
+                "y": 162
+              },
+              "angle": 0,
+              "id": "328af3c5-8a36-49bc-996d-924624bb424b",
+              "z": 45,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "SIEM DB"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "42a5b65a-6a6d-4d82-964e-8a47082dd391"
+              },
+              "target": {
+                "id": "328af3c5-8a36-49bc-996d-924624bb424b"
+              },
+              "vertices": [],
+              "id": "1b7a1a20-9770-4e62-91af-9288fb75f067",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "flow 34",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 46,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "328af3c5-8a36-49bc-996d-924624bb424b"
+              },
+              "target": {
+                "id": "42a5b65a-6a6d-4d82-964e-8a47082dd391"
+              },
+              "vertices": [],
+              "id": "d977488c-836c-4a91-8dde-0425f37944ef",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "flow 35",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 47,
               "hasOpenThreats": false,
               "attrs": {
                 ".marker-target": {
