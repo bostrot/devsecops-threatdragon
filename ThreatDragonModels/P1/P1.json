@@ -1,0 +1,19 @@
+{
+  "summary": {
+    "title": "P1",
+    "owner": "Eric Trenkel",
+    "description": "OTT Authentifizierungssystems"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "OTT",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "diagramType": "STRIDE",
+        "id": 0
+      }
+    ],
+    "reviewer": "Egzon Tatari"
+  }
+}
